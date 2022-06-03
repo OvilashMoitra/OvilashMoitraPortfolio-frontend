@@ -1,13 +1,13 @@
 nav {
     display: flex;
-    justify-content: space-between;
     box-shadow: 5px 5px 10px whitesmoke;
 }
 
 img {
     width: 65px;
-    padding: 10px;
+    margin: 10px;
     border-radius: 30px;
+    border: 1px solid black;
 }
 
 
@@ -28,12 +28,16 @@ li {
     color: gray;
 }
 
-li:hover div {
+li>div {
+    background-color: transparent;
     width: 7px;
     height: 7px;
-    background-color: blue;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+li:hover div {
+    background-color: blue;
 }
 
 .bottom_navigation {
