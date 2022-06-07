@@ -3,7 +3,7 @@ nav {
     box-shadow: 5px 5px 10px whitesmoke;
 }
 
-img {
+nav>img {
     width: 65px;
     margin: 10px;
     border-radius: 30px;
