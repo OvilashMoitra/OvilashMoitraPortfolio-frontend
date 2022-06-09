@@ -1,46 +1,60 @@
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
-
+import Work from './Components/Work/Work';
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from 'react-query'
+import Contact from './Components/Contact/Contact';
 function App() {
+  // Create a client
+  const queryClient = new QueryClient()
   return (
-    <div>
-      <Navbar></Navbar>
-      <Header />
-      <About />
+    <QueryClientProvider client={queryClient}>
       <div>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
-        <p>Adding demo text to check fixed menu.</p>
+        <Navbar></Navbar>
+        <Header />
+        <About />
+        <Work />
+        <Contact />
+        <div>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+          <p>Adding demo text to check fixed menu.</p>
+        </div>
       </div>
-    </div>
+    </QueryClientProvider>
   );
 }
 

@@ -1,0 +1,56 @@
+.app__project {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .app__project-link {
+        display: none;
+
+    }
+
+
+    &:hover .app__project-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 4%;
+        bottom: 3%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        width: 250px;
+        height: 300px;
+
+        a {
+            color: black;
+            cursor: pointer;
+
+            svg {
+                background: #fff;
+                margin: 5px;
+                border-radius: 50%;
+            }
+
+            &:hover svg {
+                transform: scale(1.5);
+                transition: 1s ease-in-out;
+
+            }
+        }
+
+    }
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}

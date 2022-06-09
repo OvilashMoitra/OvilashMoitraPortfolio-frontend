@@ -1,0 +1,28 @@
+.app__filter-button {
+    margin: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #fff;
+    transition: 1s ease-in-out;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+
+    &:hover {
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+.app__project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.active {
+    background-color: blue;
+    color: #fff;
+}
