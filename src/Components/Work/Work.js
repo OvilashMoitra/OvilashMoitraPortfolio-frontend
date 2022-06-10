@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 import './Work.scss'
 const Work = () => {
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('http://localhost:5000/projects').then(res =>
+        fetch('https://ancient-dusk-61847.herokuapp.com/projects').then(res =>
             res.json()
         )
     )
