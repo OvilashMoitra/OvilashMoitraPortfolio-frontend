@@ -11,6 +11,7 @@ import {
 } from 'react-query'
 import Contact from './Components/Contact/Contact';
 import Skills from './Components/Skills/Skills';
+import Footer from './Components/Footer/Footer';
 function App() {
   // Create a client
   const queryClient = new QueryClient()
@@ -23,7 +24,8 @@ function App() {
         <Work />
         <Skills />
         <Contact />
-        <div>
+        <Footer />
+        {/* <div>
           <p>Adding demo text to check fixed menu.</p>
           <p>Adding demo text to check fixed menu.</p>
           <p>Adding demo text to check fixed menu.</p>
@@ -54,7 +56,7 @@ function App() {
           <p>Adding demo text to check fixed menu.</p>
           <p>Adding demo text to check fixed menu.</p>
           <p>Adding demo text to check fixed menu.</p>
-        </div>
+        </div> */}
       </div>
     </QueryClientProvider>
   );

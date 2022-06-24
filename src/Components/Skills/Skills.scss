@@ -1,0 +1,9 @@
+.app__skill-1 {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+
+    @media only screen and (max-width: 480px) {
+        width: 100vw;
+    }
+}

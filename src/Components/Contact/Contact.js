@@ -20,7 +20,7 @@ const Contact = () => {
                     <img src={email} style={{ width: '45px', height: 25, boxShadow: '0 0 20px rgba(0,0,0,.1)' }} alt="" />
                     <a href="mailto:ovilashmoitraofficial@gmail.com" target={'_blank'} rel="noreferrer" style={{ color: 'GrayText', textDecoration: 'none' }}>ovilashmoitraofficial@gmail.com</a>
                 </div>
-                <div style={{ boxShadow: '0 0 20px rgba(0,0,0,.1)', width: 290, display: 'flex', padding: 10, borderRadius: 10 }}>
+                <div style={{ boxShadow: '0 0 20px rgba(0,0,0,.1)', width: 290, display: 'flex', padding: '20px 10px', borderRadius: 10 }}>
                     <BsFillTelephoneForwardFill style={{ width: '45px', height: 30 }} />
                     <a href="tel:+8801874653773" target={'_blank'} rel="noreferrer" style={{ color: 'GrayText', textDecoration: 'none' }}>+8801874653773</a>
                 </div>
