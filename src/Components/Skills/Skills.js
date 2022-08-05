@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.scss'
 const Skills = () => {
     return (
-        <>
+        <section id='Skills'>
             <p style={{ fontWeight: 'bolder', fontSize: '2em', textAlign: 'center' }}>My <span style={{ color: 'blue' }}>Skills </span ></p>
             <div className='app__skill-1'>
                 {
@@ -24,7 +24,7 @@ const Skills = () => {
                     ['https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg'].map(elem => <img src={elem} alt='' style={{ width: '50px', borderRadius: '50%' }} />)
                 }
             </div>
-        </>
+        </section>
     );
 };
 

@@ -5,6 +5,7 @@ import './Header.scss'
 const Header = () => {
     return (
         <div
+            id='Home'
             className='header'>
             <div className="headerBadge">
                 <motion.div

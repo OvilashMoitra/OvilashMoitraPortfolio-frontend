@@ -83,6 +83,7 @@ li:hover div {
         left: 43%;
         background-color: rgb(255, 255, 255);
         font-size: 42px;
+        color: #000;
     }
 
     .nav-icon {
@@ -92,5 +93,7 @@ li:hover div {
         padding: 5px;
         background-color: rgb(255, 255, 255);
         font-size: 30px;
+        color: #000;
     }
+
 }

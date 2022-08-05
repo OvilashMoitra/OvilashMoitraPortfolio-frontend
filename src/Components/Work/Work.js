@@ -19,7 +19,7 @@ const Work = () => {
     }
     console.log(data);
     return (
-        <div style={{ textAlign: 'center' }} >
+        <div style={{ textAlign: 'center' }} id='Work' >
             <p style={{ fontWeight: 'bolder', fontSize: '2em', textAlign: 'center' }}>My creative <span style={{ color: 'blue' }}>Portfolio </span >Section</p>
 
             {

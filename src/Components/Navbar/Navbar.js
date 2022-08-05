@@ -16,7 +16,7 @@ const Navbar = () => {
                             return (
                                 <li key={`item-${elem}`}>
                                     <div></div>
-                                    <span>{elem}</span>
+                                    <a href={`#${elem}`}>{elem}</a>
                                 </li>
                             )
                         })
@@ -25,21 +25,21 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className='bottom_navigation'>
-                <div className='nav-div'>
+                <a href='#About' className='nav-div' >
                     <SiAboutdotme className='nav-icon' title='About' />
-                </div>
-                <div className='nav-div'>
+                </a>
+                <a href='#Contact' className='nav-div'>
                     <MdContactPage className='nav-icon' title='Contact' />
-                </div>
-                <div className='nav-div'>
+                </a >
+                <a href='#Home' className='nav-div'>
                     <AiFillHome className='nav-home' title='Home' />
-                </div>
-                <div className='nav-div'>
+                </a >
+                <a href='#Work' className='nav-div'>
                     <AiOutlineFundProjectionScreen className='nav-icon' title='Project' />
-                </div>
-                <div className='nav-div'>
+                </a >
+                <a href='#Skills' className='nav-div'>
                     <BsFillFileEarmarkTextFill className='nav-icon' />
-                </div>
+                </a >
             </div>
         </>
     );

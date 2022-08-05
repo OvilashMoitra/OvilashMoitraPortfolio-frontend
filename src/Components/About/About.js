@@ -7,7 +7,7 @@ import Mern from '../../assest/MREN-stack-1.jpg'
 import Backend from '../../assest/Backend.png'
 const About = () => {
     return (
-        <>
+        <section id='About'>
             <p style={{ fontWeight: 'bolder', fontSize: '2em', textAlign: 'center' }}>I know <span style={{ color: 'blue' }}>Good Website </span >Means <span style={{ color: 'blue' }}>Good Business</span> </p>
             <div className="app__about-container">
                 <motion.div
@@ -50,7 +50,7 @@ const About = () => {
                     <p>I am begginer at Backend. I only know the CURD operation.</p>
                 </motion.div>
             </div>
-        </>
+        </section>
     );
 };
 

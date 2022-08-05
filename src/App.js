@@ -25,38 +25,6 @@ function App() {
         <Skills />
         <Contact />
         <Footer />
-        {/* <div>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-          <p>Adding demo text to check fixed menu.</p>
-        </div> */}
       </div>
     </QueryClientProvider>
   );

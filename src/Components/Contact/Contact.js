@@ -13,7 +13,7 @@ const Contact = () => {
         contactForm.reset()
     }
     return (
-        <div>
+        <div id='Contact'>
             <p style={{ fontWeight: 'bolder', fontSize: '2em', textAlign: 'center' }}><span style={{ color: 'blue' }}>Contact </span >Me</p>
             <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }} className="app__contact-info">
                 <div style={{ boxShadow: '0 0 20px rgba(0,0,0,.1)', width: 290, display: 'flex', padding: '23px 13px', borderRadius: 10, margin: '8px 21px' }}>
