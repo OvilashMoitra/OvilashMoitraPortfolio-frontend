@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 import './Work.scss'
 const Work = () => {
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('https://ovilashmoitra-portfolio-backend.vercel.app/projects').then(res =>
+        fetch('http://localhost:5000/products').then(res =>
             res.json()
         )
     )
@@ -27,7 +27,7 @@ const Work = () => {
             }
             <div className="app__project-container">
                 {
-                    filteredItem === 'ALL' ? data.map(elem => <Project elem={elem}></Project>) : data.filter(elem => elem?.category === filteredItem).map(elem => <Project elem={elem}></Project>)
+                    filteredItem === 'ALL' ? data?.map(elem => <Project elem={elem}></Project>) : data.filter(elem => elem?.category === filteredItem).map(elem => <Project elem={elem}></Project>)
                 }
             </div>
         </div>

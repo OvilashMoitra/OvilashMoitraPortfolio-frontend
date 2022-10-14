@@ -14,7 +14,7 @@ const Contact = () => {
             email: e?.target?.email?.value,
             message: e?.target?.message?.value
         }
-        const url = `https://ovilashmoitra-portfolio-backend.vercel.app/contact`
+        const url = `http://localhost:5000/contact`
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
