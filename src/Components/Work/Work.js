@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 import './Work.scss'
 const Work = () => {
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('https://ancient-dusk-61847.herokuapp.com/projects').then(res =>
+        fetch('https://ovilashmoitra-portfolio-backend.vercel.app/projects').then(res =>
             res.json()
         )
     )

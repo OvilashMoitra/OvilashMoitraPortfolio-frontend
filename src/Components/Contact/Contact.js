@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import email from '../../assest/Email.webp';
 import { BsFillTelephoneForwardFill } from 'react-icons/bs';
 import toast, { Toaster } from 'react-hot-toast';
 import './Contact.scss'
 const Contact = () => {
+    const resetForm = useRef(null);
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(e?.target?.name?.value, e?.target?.email?.value, e?.target?.message?.value);
+        // Response saved to backend
+        const text = {
+            name: e?.target?.name?.value,
+            email: e?.target?.email?.value,
+            message: e?.target?.message?.value
+        }
+        const url = `https://ovilashmoitra-portfolio-backend.vercel.app/contact`
+        fetch(url, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(text)
+        })
+            .then(res => res.json())
+            .then(result => console.log(result))
         toast.success('Your response have been saved');
-        console.log(e);
-        const contactForm = document.getElementById('contactForm')
-        contactForm.reset()
+        resetForm.current.reset();
     }
     return (
         <div id='Contact'>
@@ -26,9 +39,9 @@ const Contact = () => {
                 </div>
             </div>
             <div className="app__contact-form">
-                <form onSubmit={handleSubmit} id='contactForm' >
+                <form ref={resetForm} onSubmit={handleSubmit} id='contactForm' >
                     <input type="text" name="name" id="name" placeholder='Enter your name here' required />
-                    <input type="email" name="email" id="email" placeholder='Enter your name here' required />
+                    <input type="email" name="email" id="email" placeholder='Enter your email here' required />
                     <textarea name="message" id="" cols="100" rows="100" placeholder='Enter message here' required></textarea>
                     <button type="submit">Submit</button>
                 </form>

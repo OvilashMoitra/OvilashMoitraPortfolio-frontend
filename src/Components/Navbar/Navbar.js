@@ -16,7 +16,7 @@ const Navbar = () => {
                             return (
                                 <li key={`item-${elem}`}>
                                     <div></div>
-                                    <a href={`#${elem}`}>{elem}</a>
+                                    <a style={{ textDecoration: 'none' }} href={`#${elem}`}>{elem}</a>
                                 </li>
                             )
                         })
