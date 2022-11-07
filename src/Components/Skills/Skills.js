@@ -1,6 +1,8 @@
 import React from 'react';
 import './Skills.scss'
 const Skills = () => {
+    const s = 9;
+    console.log(s)
     return (
         <section id='Skills'>
             <p style={{ fontWeight: 'bolder', fontSize: '2em', textAlign: 'center' }}>My <span style={{ color: 'blue' }}>Skills </span ></p>

@@ -14,7 +14,7 @@ const Contact = () => {
             email: e?.target?.email?.value,
             message: e?.target?.message?.value
         }
-        const url = `http://localhost:5000/contact`
+        const url = `https://ovilash-portfolio-backend.onrender.com/contact`
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

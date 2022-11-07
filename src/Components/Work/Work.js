@@ -3,8 +3,10 @@ import { useQuery } from 'react-query';
 import Project from '../Project/Project';
 import './Work.scss'
 const Work = () => {
+    var s = 4;
+    console.log(s)
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('http://localhost:5000/products').then(res =>
+        fetch('https://ovilash-portfolio-backend.onrender.com/products').then(res =>
             res.json()
         )
     )
