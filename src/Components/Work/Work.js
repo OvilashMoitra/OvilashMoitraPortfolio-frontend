@@ -6,7 +6,7 @@ const Work = () => {
     var s = 4;
     console.log(s)
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('https://ovilash-portfolio-backend.onrender.com/products').then(res =>
+        fetch('https://ovilash-portfolio-backend.onrender.com/projects').then(res =>
             res.json()
         )
     )
